@@ -13,8 +13,6 @@ rpg(X)
 }
 \value{
 Vector with personal correlation for each participant      (n x 1)
-
-Vector with personal correlation for each participant      (n x 1)
 }
 \description{
 `rpg`returns the personal correlation as proposed by Fowler (1954) and
@@ -25,28 +23,8 @@ It is implemented as it appears in Ferrando PJ, Vigil-Colet A and
 Lorenzo-Seva U (2016) Practical Person-Fit Assessment with the Linear FA
 Model: New Developments and a Comparative Study. Front. Psychol. 7:1973.
 doi: 10.3389/fpsyg.2016.01973
-
-`rpg`returns the personal correlation as proposed by Fowler (1954) and
-Donlon & Fisher (1968). It is computed as the correlation between the
-respondent’s response vector and the vector of item sample means.
-
-It is implemented as it appears in Ferrando PJ, Vigil-Colet A and
-Lorenzo-Seva U (2016) Practical Person-Fit Assessment with the Linear FA
-Model: New Developments and a Comparative Study. Front. Psychol. 7:1973.
-doi: 10.3389/fpsyg.2016.01973
 }
 \examples{
-n <- 3 # persons (3)
-m <- 5 # items (5)
-mu <- 0 # mean
-sigma <- 1 # sd
-
-df <- matrix(data = NA, nrow = n, ncol = m) # raw data
-for (i in 1:nrow(df)) {
-  df[i,] <- rnorm(n = m, mean = mu, sd = sigma) #m because I organize it by rows
-}
-
-rpg(df)
 n <- 3 # persons (3)
 m <- 5 # items (5)
 mu <- 0 # mean
