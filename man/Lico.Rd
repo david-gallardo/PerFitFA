@@ -17,8 +17,6 @@ Lico(X, ls, lam)
 }
 \value{
 Vector with Lico index for each participant (n x 1)
-
-Vector with Lico index for each participant (n x 1)
 }
 \description{
 `Lico`is a weighted mean-squared statistic which has unit expectation under
@@ -30,32 +28,8 @@ It is implemented as it appears in Ferrando PJ, Vigil-Colet A and
 Lorenzo-Seva U (2016) Practical Person-Fit Assessment with the Linear FA
 Model: New Developments and a Comparative Study. Front. Psychol. 7:1973.
 doi: 10.3389/fpsyg.2016.01973
-
-`Lico`is a weighted mean-squared statistic which has unit expectation under
- the null hypothesis of inconsistency as proposed by Ferrando, Vigil-Colet &
- Lorenzo-Seva (2017). Large values suggest inconsistency: values of
- about 1.5 are generally used for judging potential inconsistency.
-
-It is implemented as it appears in Ferrando PJ, Vigil-Colet A and
-Lorenzo-Seva U (2016) Practical Person-Fit Assessment with the Linear FA
-Model: New Developments and a Comparative Study. Front. Psychol. 7:1973.
-doi: 10.3389/fpsyg.2016.01973
 }
 \examples{
-n <- 3 # persons (3)
-m <- 5 # items (5)
-mu <- 0 # mean
-sigma <- 1 # sd
-
-df <- matrix(data = NA, nrow = n, ncol = m) # raw data
-for (i in 1:nrow(df)) {
-  df[i,] <- rnorm(n = m, mean = mu, sd = sigma) #m because I organize it by rows
-}
-
-ls <- rnorm(n = n, mean = mu, sd = sigma/2) # latent score estimates for n individuals in a single factor
-lam <- rnorm(n = m, mean = mu, sd = sigma/2) # lambdas
-
-Lico(X, ls, lam)
 n <- 3 # persons (3)
 m <- 5 # items (5)
 mu <- 0 # mean
