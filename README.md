@@ -8,7 +8,7 @@ There is a packaged named PerFit that does this job within the context of IRT. H
 
 This package is simply an R translation of the original Matlab macros. All credit is theirs.
 
-## Instalation
+## Installation
 ```{r}
 library(devtools)
 install_github("david-gallardo/PerFitFA")
